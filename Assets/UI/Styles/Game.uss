@@ -1,0 +1,84 @@
+.container {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    flex-direction: column;
+    background-color: rgb(16, 18, 31);
+}
+
+.header {
+    font-size: 74px;
+    -unity-text-align: middle-center;
+    flex-basis: 40%;
+    flex-grow: 0;
+    -unity-font-style: normal;
+    color: rgb(255, 255, 255);
+    -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=8eaf7190b57cb6d4ca8365d622901192&type=3#Tomorrow-Medium");
+    -unity-font-definition: initial;
+}
+
+.button {
+    flex-basis: 13%;
+    width: 36%;
+    align-self: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 31px;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=d0cf4dfc010ed4745b98c57bba390a14&type=3#Tomorrow-Regular");
+}
+
+.subheader {
+    font-size: 54px;
+    -unity-text-align: middle-center;
+    flex-basis: 40%;
+    flex-grow: 0;
+    -unity-font-style: normal;
+    color: rgb(255, 255, 255);
+    -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=8eaf7190b57cb6d4ca8365d622901192&type=3#Tomorrow-Medium");
+    -unity-font-definition: initial;
+}
+
+.backbutton {
+    flex-basis: 12%;
+    width: 15%;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 31px;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=d0cf4dfc010ed4745b98c57bba390a14&type=3#Tomorrow-Regular");
+}
+
+.levelbutton {
+    flex-basis: 12%;
+    width: 10%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 45px;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=d0cf4dfc010ed4745b98c57bba390a14&type=3#Tomorrow-Regular");
+    height: auto;
+    -unity-font-style: normal;
+}
+
+.levels {
+    width: auto;
+    height: auto;
+    flex-grow: 5;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10px;
+}

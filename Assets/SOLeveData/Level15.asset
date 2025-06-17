@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f6538efa1150b418ca7d910e053fb7, type: 3}
+  m_Name: Level15
+  m_EditorClassIdentifier: 
+  levelNumber: 15
+  nodeSpeed: 2
+  extractorSpeed: 0.5
+  adderSpeed: 0.5
+  subtractorSpeed: 0.5
+  incrementerSpeed: 0.5
+  decrementerSpeed: 0.5
+  multiplierSpeed: 0.5
+  multx2Speed: 0.5
+  multx3Speed: 0.5
+  multx5Speed: 0.5
+  multx7Speed: 0.5
+  splitterSpeed: 0.5
+  sorterSpeed: 0.5
+  decolorizerSpeed: 0.5
+  isAdderUnlocked: 1
+  isSubtractorUnlocked: 1
+  isIncrementerUnlocked: 0
+  isDecrementerUnlocked: 0
+  isMultiplierUnlocked: 1
+  isMultx2Unlocked: 0
+  isMultx3Unlocked: 0
+  isMultx5Unlocked: 0
+  isMultx7Unlocked: 0
+  isSplitterUnlocked: 1
+  isSorterUnlocked: 0
+  isDecolorizerUnlocked: 1
+  isJump1Unlocked: 1
+  isJump2Unlocked: 1
+  isJump3Unlocked: 1

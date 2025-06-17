@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Game.uss?fileID=7433441132597879392&amp;guid=2655ce756d9dc88438dab63dbd7acb87&amp;type=3#Game" />
+    <ui:VisualElement name="Container" class="container" style="flex-direction: column;">
+        <ui:Label tabindex="-1" text="Level Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" />
+        <ui:VisualElement name="Levels" class="levels" style="flex-grow: 1;">
+            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level1" class="levelbutton" />
+            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level2" class="levelbutton" />
+            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level3" class="levelbutton" />
+            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level4" class="levelbutton" />
+        </ui:VisualElement>
+        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Settings" class="backbutton" />
+    </ui:VisualElement>
+</ui:UXML>
