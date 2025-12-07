@@ -1,13 +1,39 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Styles/Game.uss?fileID=7433441132597879392&amp;guid=2655ce756d9dc88438dab63dbd7acb87&amp;type=3#Game" />
+    <Style src="project://database/Assets/UI/Styles/Game.uss?fileID=7433441132597879392&amp;guid=2655ce756d9dc88438dab63dbd7acb87&amp;type=3#Game"/>
     <ui:VisualElement name="Container" class="container" style="flex-direction: column;">
-        <ui:Label tabindex="-1" text="Level Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" />
+        <ui:Label tabindex="-1" text="Level Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" style="height: auto; width: auto; flex-shrink: 1; flex-basis: 30%;"/>
         <ui:VisualElement name="Levels" class="levels" style="flex-grow: 1;">
-            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level1" class="levelbutton" />
-            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level2" class="levelbutton" />
-            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level3" class="levelbutton" />
-            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level4" class="levelbutton" />
+            <ui:VisualElement name="LevelColumn1" class="levelColumn" style="flex-grow: 1;">
+                <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level1" class="levelbutton"/>
+                <ui:Button text="6" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level6" class="levelbutton"/>
+                <ui:Button text="11" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level11" class="levelbutton"/>
+                <ui:Button text="16" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level16" class="levelbutton"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="LevelColumn2" class="levelColumn" style="flex-grow: 1;">
+                <ui:Button text="2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level2" class="levelbutton"/>
+                <ui:Button text="7" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level7" class="levelbutton"/>
+                <ui:Button text="12" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level12" class="levelbutton"/>
+                <ui:Button text="17" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level17" class="levelbutton"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="LevelColumn3" class="levelColumn" style="flex-grow: 1;">
+                <ui:Button text="3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level3" class="levelbutton"/>
+                <ui:Button text="8" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level8" class="levelbutton"/>
+                <ui:Button text="13" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level13" class="levelbutton"/>
+                <ui:Button text="18" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level18" class="levelbutton"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="LevelColumn4" class="levelColumn" style="flex-grow: 1;">
+                <ui:Button text="4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level4" class="levelbutton"/>
+                <ui:Button text="9" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level9" class="levelbutton"/>
+                <ui:Button text="14" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level14" class="levelbutton"/>
+                <ui:Button text="19" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level19" class="levelbutton"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="LevelColumn5" class="levelColumn" style="flex-grow: 1;">
+                <ui:Button text="5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level5" class="levelbutton"/>
+                <ui:Button text="10" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level10" class="levelbutton"/>
+                <ui:Button text="15" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level15" class="levelbutton"/>
+                <ui:Button text="20" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level20" class="levelbutton"/>
+            </ui:VisualElement>
         </ui:VisualElement>
-        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Settings" class="backbutton" />
+        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Back" class="backbutton"/>
     </ui:VisualElement>
 </ui:UXML>

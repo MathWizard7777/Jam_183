@@ -1,20 +1,51 @@
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
+using UnityEngine.UIElements;
 
 public class LevelSelect : MonoBehaviour
 {
-    public MachineDataScriptableObject[] levels; // Reference to the game data scriptable object
+    [SerializeField] private MachineDataScriptableObject[] levels;
+    [SerializeField] private UIDocument document;
 
-    public void Back()
+    private Button backButton;
+    private Button[] levelButtons;
+
+    void Start()
     {
-        SceneManager.LoadScene("Start Menu"); // Load the start menu scene
+        VisualElement root = document.rootVisualElement;
+
+        levelButtons = new Button[20];
+
+        int total = Mathf.Min(levels.Length, 20);
+        levelButtons = new Button[total];
+
+        for (int n = 1; n <= total; n++)
+        {
+            var btn = root.Q<Button>($"Level{n}");
+            if (btn == null) Debug.LogWarning($"Level button not found: Level{n}");
+            else
+            {
+                levelButtons[n - 1] = btn;
+                btn.RegisterCallback<ClickEvent>(LoadLevelN(n));
+            }
+        }
+
+        backButton = root.Q<Button>("Back");
+        backButton.RegisterCallback<ClickEvent>(OnBackButtonClick);
     }
 
-    public void LevelN(int levelNumber)
+    private void OnBackButtonClick(ClickEvent evt)
     {
-        LevelDataHolder.selectedLevelData = levels[levelNumber - 1]; // Set the selected level data
-        SceneManager.LoadScene("Level 1"); // Load the selected level scene
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    private EventCallback<ClickEvent> LoadLevelN(int n)
+    {
+        return evt =>
+        {
+            LevelDataHolder.selectedLevelData = levels[n - 1];
+            SceneManager.LoadScene("Level");
+        };
     }
 }

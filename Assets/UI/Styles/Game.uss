@@ -13,7 +13,7 @@
     -unity-font-style: normal;
     color: rgb(255, 255, 255);
     -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=8eaf7190b57cb6d4ca8365d622901192&type=3#Tomorrow-Medium");
-    -unity-font-definition: initial;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/True%20Type%20Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=801c428aa7c28bd4dbfad3da85c954df&type=3#Tomorrow-Medium");
 }
 
 .button {
@@ -27,7 +27,7 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     font-size: 31px;
-    -unity-font-definition: initial;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/True%20Type%20Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=801c428aa7c28bd4dbfad3da85c954df&type=3#Tomorrow-Medium");
     -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=d0cf4dfc010ed4745b98c57bba390a14&type=3#Tomorrow-Regular");
 }
 
@@ -39,7 +39,7 @@
     -unity-font-style: normal;
     color: rgb(255, 255, 255);
     -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=8eaf7190b57cb6d4ca8365d622901192&type=3#Tomorrow-Medium");
-    -unity-font-definition: initial;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/True%20Type%20Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=3eb5ca6f235c28d46881f7c98b3a423a&type=3#Tomorrow-Regular");
 }
 
 .backbutton {
@@ -53,32 +53,46 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     font-size: 31px;
-    -unity-font-definition: initial;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/True%20Type%20Fonts/Tomorrow-Medium.ttf?fileID=12800000&guid=801c428aa7c28bd4dbfad3da85c954df&type=3#Tomorrow-Medium");
     -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=d0cf4dfc010ed4745b98c57bba390a14&type=3#Tomorrow-Regular");
 }
 
 .levelbutton {
-    flex-basis: 12%;
-    width: 10%;
+    flex-basis: 8%;
+    width: 80%;
     align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     font-size: 45px;
-    -unity-font-definition: initial;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/True%20Type%20Fonts/Tomorrow-SemiBold.ttf?fileID=12800000&guid=089472a2c936e5a43b52a3d7d0c82aa5&type=3#Tomorrow-SemiBold");
     -unity-font: url("project://database/Assets/UI/TextMesh%20Pro/Fonts/Tomorrow-Regular.ttf?fileID=12800000&guid=d0cf4dfc010ed4745b98c57bba390a14&type=3#Tomorrow-Regular");
     height: auto;
     -unity-font-style: normal;
+    flex-grow: 2;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 0%;
+    margin-left: 0%;
 }
 
 .levels {
-    width: auto;
+    width: 70%;
     height: auto;
     flex-grow: 5;
     flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10px;
+    margin-left: 0%;
+    margin-right: 0;
+    position: relative;
+    left: 15%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.levelColumn {
+    flex-grow: 1;
+    flex-direction: column;
 }
