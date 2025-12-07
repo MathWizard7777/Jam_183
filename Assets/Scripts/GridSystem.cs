@@ -87,6 +87,8 @@ public class GridSystem : MonoBehaviour {
         ghostColor.a = 0.5f; // Set the alpha value for transparency
         errorColor = Color.red; // Set the error color
         errorColor.a = 0.5f; // Set the alpha value for transparency
+
+        gameData = LevelDataHolder.selectedLevelData;
     }
 
     private void UpdateMousePosition() {
