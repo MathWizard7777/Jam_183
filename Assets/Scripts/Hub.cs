@@ -39,8 +39,8 @@ public class Hub : MonoBehaviour
         }
         
         targetNumbers = new int[] {1, 2, 3, 5, 14, 33, 51, 62, 78, 84, 139, 157, 173, 191, 227, 351, 360, 420, 5040, 571};
-        targetColors = new GameColor[] {Red, Green, Red, Yellow, Red, Green, Red, Red, Yellow, Green, Blue, Yellow, Yellow, Green, Blue, Yellow, Blue, Green, Blue, Blue};
-        targetAmounts = new int[] {15, 15, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20};
+        targetColors = new GameColor[] {None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None};
+        targetAmounts = new int[] {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
         unlockText = new string[] {"Adder", "Splitter", "Decolorizer", "Multiplier", "Jump 1", "Jump 1", "Subtractor", "Jump 2", "Jump 2", "Jump 3", "Jump 3", "Jump 3", "Jump 3", "Sorter", "Sorter", "Decrementer", "Decrementer", "Incrementer", "Incrementer", "Nothing"};
         storage = new Dictionary<string, int>();
 

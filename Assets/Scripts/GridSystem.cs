@@ -137,7 +137,7 @@ public class GridSystem : MonoBehaviour {
     private void CheckSpaceAvailability() {
         spaceAtSelectedPosition = true; // Space is available by default
 
-        if (objectPosition.x < -9 || objectPosition.y < -9 || objectPosition.x > 10 || objectPosition.y > 10) {
+        if (objectPosition.x < -9 || objectPosition.y < -4 || objectPosition.x > 4 || objectPosition.y > 5) {
             spaceAtSelectedPosition = false; // Space is not available if out of bounds
         }
 

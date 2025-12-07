@@ -39,3 +39,6 @@ MonoBehaviour:
   isSplitterUnlocked: 0
   isSorterUnlocked: 0
   isDecolorizerUnlocked: 0
+  isJump1Unlocked: 0
+  isJump2Unlocked: 0
+  isJump3Unlocked: 0
