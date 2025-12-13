@@ -20,7 +20,10 @@ public enum ObjectType {
     Decolorizer,
     Jump1,
     Jump2,
-    Jump3
+    Jump3,
+    greaterThan2,
+    greaterThan5,
+    greaterThan10,
 }
 
 public class GridSystem : MonoBehaviour {
@@ -28,23 +31,26 @@ public class GridSystem : MonoBehaviour {
     public MachineDataScriptableObject gameData; // Reference to the game data scriptable object
     public int tilesUsed;
 
-    public GameObject conveyorPrefab; // Prefab for the conveyor belt
-    public GameObject extractorPrefab; // Prefab for the extractor
-    public GameObject adderPrefab; // Prefab for the adder
-    public GameObject subtractorPrefab; // Prefab for the subtractor
-    public GameObject incrementerPrefab; // Prefab for the incrementer
-    public GameObject decrementerPrefab; // Prefab for the decrementer
-    public GameObject multiplierPrefab; // Prefab for the multiplier
-    public GameObject multx2Prefab; // Prefab for the multiplier x2
-    public GameObject multx3Prefab; // Prefab for the multiplier x3
-    public GameObject multx5Prefab; // Prefab for the multiplier x5
-    public GameObject multx7Prefab; // Prefab for the multiplier x7
-    public GameObject splitterPrefab; // Prefab for the splitter
-    public GameObject sorterPrefab; // Prefab for the sorter
-    public GameObject decolorizerPrefab; // Prefab for the decolorizer
-    public GameObject jump1Prefab; // Prefab for the jump1
-    public GameObject jump2Prefab; // Prefab for the jump2
-    public GameObject jump3Prefab; // Prefab for the jump3
+    [SerializeField] private GameObject conveyorPrefab;
+    [SerializeField] private GameObject extractorPrefab;
+    [SerializeField] private GameObject adderPrefab;
+    [SerializeField] private GameObject subtractorPrefab;
+    [SerializeField] private GameObject incrementerPrefab;
+    [SerializeField] private GameObject decrementerPrefab;
+    [SerializeField] private GameObject multiplierPrefab;
+    [SerializeField] private GameObject multx2Prefab;
+    [SerializeField] private GameObject multx3Prefab;
+    [SerializeField] private GameObject multx5Prefab;
+    [SerializeField] private GameObject multx7Prefab;
+    [SerializeField] private GameObject splitterPrefab;
+    [SerializeField] private GameObject sorterPrefab;
+    [SerializeField] private GameObject decolorizerPrefab;
+    [SerializeField] private GameObject jump1Prefab;
+    [SerializeField] private GameObject jump2Prefab;
+    [SerializeField] private GameObject jump3Prefab;
+    [SerializeField] private GameObject greaterThan2Prefab;
+    [SerializeField] private GameObject greaterThan5Prefab;
+    [SerializeField] private GameObject greaterThan10Prefab;
 
     private Quaternion objectRotation; // Rotation of the object
     private Vector3 objectPosition; // Position of the object
@@ -131,6 +137,12 @@ public class GridSystem : MonoBehaviour {
             selectedPrefab = jump2Prefab;
         } else if (objectSelection == ObjectType.Jump3) {
             selectedPrefab = jump3Prefab;
+        } else if (objectSelection == ObjectType.greaterThan2) {
+            selectedPrefab = greaterThan2Prefab;
+        } else if (objectSelection == ObjectType.greaterThan5) {
+            selectedPrefab = greaterThan5Prefab;
+        } else if (objectSelection == ObjectType.greaterThan10) {
+            selectedPrefab = greaterThan10Prefab;
         }
     }
 
@@ -312,6 +324,12 @@ public class GridSystem : MonoBehaviour {
             objectSelection = ObjectType.Jump3;
             if (!gameData.isJump3Unlocked) { CyclePlacemenmt(); }
         } else if (objectSelection == ObjectType.Jump3) {
+            objectSelection = ObjectType.greaterThan2;
+        } else if (objectSelection == ObjectType.greaterThan2) {
+            objectSelection = ObjectType.greaterThan5;
+        } else if (objectSelection == ObjectType.greaterThan5) {
+            objectSelection = ObjectType.greaterThan10;
+        } else if (objectSelection == ObjectType.greaterThan10) {
             objectSelection = ObjectType.Conveyor;
         }
     }

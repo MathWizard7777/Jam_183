@@ -1,4 +1,11 @@
 {
+    "dotnetAcquisitionExtension.allowInvalidPaths": true,
+    "dotnetAcquisitionExtension.existingDotnetPath": [
+        {
+            "extensionId": "ms-dotnettools.csdevkit",
+            "path": "C:\\Program Files\\dotnet\\dotnet.exe"
+        }
+    ],
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,

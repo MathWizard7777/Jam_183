@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class MultiplyByN : Machine {
-    public int multiplier; // The multiplier value
+    public int multiplier;
 
     protected override void Start() {
         numberOfInputs = 1;

@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class Jumper : MonoBehaviour
+public class GreaterThanN : MonoBehaviour
 {
     public int n;
 
     void Update() {
         CheckForNode();
-    }
-
-    void OnDrawGizmos() {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(transform.position - transform.rotation * Vector3.right * 0.5f, 0.2f);
     }
 
     private void CheckForNode() {
@@ -20,9 +15,9 @@ public class Jumper : MonoBehaviour
                 Node node = collider.gameObject.GetComponent<Node>();
                 if (node != null) {
                     if (!node.isJumping) {
-                        node.target = transform.position + transform.rotation * Vector3.right * n;
-                        node.isJumping = true;
-                        node.direction = transform.rotation * Vector3.right;
+                        if (node.value > n) {
+                            node.color = GameColor.Blue;
+                        }
                     }
                 }
             }
