@@ -37,8 +37,8 @@ MonoBehaviour:
   isMultx5Unlocked: 0
   isMultx7Unlocked: 0
   isSplitterUnlocked: 1
-  isSorterUnlocked: 0
-  isDecolorizerUnlocked: 0
+  isSorterUnlocked: 1
+  isDecolorizerUnlocked: 1
   isJump1Unlocked: 0
   isJump2Unlocked: 0
   isJump3Unlocked: 0

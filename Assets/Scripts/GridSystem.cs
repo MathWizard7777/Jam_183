@@ -361,26 +361,24 @@ public class GridSystem : MonoBehaviour {
             objectSelection = ObjectType.Decrementer;
         } else if (Keyboard.current.digit6Key.wasPressedThisFrame && gameData.isMultiplierUnlocked) {
             objectSelection = ObjectType.Multiplier;
-        } else if (Keyboard.current.numpad2Key.wasPressedThisFrame && gameData.isMultx2Unlocked) {
-            objectSelection = ObjectType.Multx2;
-        } else if (Keyboard.current.numpad3Key.wasPressedThisFrame && gameData.isMultx3Unlocked) {
-            objectSelection = ObjectType.Multx3;
-        } else if (Keyboard.current.numpad5Key.wasPressedThisFrame && gameData.isMultx5Unlocked) {
-            objectSelection = ObjectType.Multx5;
-        } else if (Keyboard.current.numpad7Key.wasPressedThisFrame && gameData.isMultx7Unlocked) {
-            objectSelection = ObjectType.Multx7;
         } else if (Keyboard.current.digit7Key.wasPressedThisFrame && gameData.isSplitterUnlocked) {
             objectSelection = ObjectType.Splitter;
         } else if (Keyboard.current.digit8Key.wasPressedThisFrame && gameData.isSorterUnlocked) {
             objectSelection = ObjectType.Sorter;
         } else if (Keyboard.current.digit0Key.wasPressedThisFrame && gameData.isDecolorizerUnlocked) {
             objectSelection = ObjectType.Decolorizer;
-        } else if (Keyboard.current.numpad4Key.wasPressedThisFrame && gameData.isJump1Unlocked) {
+        } else if (Keyboard.current.numpad1Key.wasPressedThisFrame && gameData.isJump1Unlocked) {
             objectSelection = ObjectType.Jump1;
-        } else if (Keyboard.current.numpad8Key.wasPressedThisFrame && gameData.isJump2Unlocked) {
+        } else if (Keyboard.current.numpad2Key.wasPressedThisFrame && gameData.isJump2Unlocked) {
             objectSelection = ObjectType.Jump2;
-        } else if (Keyboard.current.numpad9Key.wasPressedThisFrame && gameData.isJump3Unlocked) {
+        } else if (Keyboard.current.numpad3Key.wasPressedThisFrame && gameData.isJump3Unlocked) {
             objectSelection = ObjectType.Jump3;
+        } else if (Keyboard.current.numpad4Key.wasPressedThisFrame) {
+            objectSelection = ObjectType.greaterThan2;
+        } else if (Keyboard.current.numpad5Key.wasPressedThisFrame) {
+            objectSelection = ObjectType.greaterThan5;
+        } else if (Keyboard.current.numpad6Key.wasPressedThisFrame) {
+            objectSelection = ObjectType.greaterThan10;
         } else {
             return;
         }

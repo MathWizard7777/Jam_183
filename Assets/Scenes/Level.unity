@@ -1129,8 +1129,8 @@ MonoBehaviour:
   jump2Prefab: {fileID: 1731380786533018739, guid: 67cbb5d606b05e94db89badb687f7d2e, type: 3}
   jump3Prefab: {fileID: 8423122188582766897, guid: 66935b1f03b37f74baab5474c7fc97c4, type: 3}
   greaterThan2Prefab: {fileID: 1592863554871158205, guid: 70a328cfd54bfd14b95adfdb96d0d37f, type: 3}
-  greaterThan5Prefab: {fileID: 1592863554871158205, guid: 70a328cfd54bfd14b95adfdb96d0d37f, type: 3}
-  greaterThan10Prefab: {fileID: 1592863554871158205, guid: 70a328cfd54bfd14b95adfdb96d0d37f, type: 3}
+  greaterThan5Prefab: {fileID: 8055264129380861122, guid: 06cd5320a04264a429c0c82543bccdba, type: 3}
+  greaterThan10Prefab: {fileID: 7925752787894601656, guid: 2129e60bf9d9fb14daf0a201bf7cc717, type: 3}
 --- !u!1 &196605142
 GameObject:
   m_ObjectHideFlags: 0

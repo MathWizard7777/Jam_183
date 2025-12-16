@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GreaterThanN : MonoBehaviour
 {
-    public int n;
+    [SerializeField] private int n;
 
     void Update() {
         CheckForNode();
